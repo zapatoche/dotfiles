@@ -1,0 +1,49 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+cursorline = true
+end-of-line-diagnostics = "hint"
+rulers = [120]
+true-color = true
+# bufferline = "multiple"
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+other-lines = "disable"  # Don't expand diagnostics unless the cursor is on the line
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+# skip-levels = 1
+
+[keys.normal]
+A-x = "extend_to_line_bounds"
+X = "select_line_above"
+
+[keys.select]
+A-x = "extend_to_line_bounds"
+X = "select_line_above"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
+
+
+
+
