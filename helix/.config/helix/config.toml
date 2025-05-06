@@ -29,7 +29,9 @@ hidden = false
 
 [editor.indent-guides]
 render = true
-character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+
+# Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "▏"
 # skip-levels = 1
 
 [keys.normal]
@@ -41,7 +43,8 @@ A-x = "extend_to_line_bounds"
 X = "select_line_above"
 
 [editor.statusline]
-left = ["mode", "spinner", "version-control", "file-name"]
+left = ["mode", "spinner", "version-control", "file-name", "diagnostics"]
+right= ["register", "total-line-numbers", "position", "selections", "primary-selection-length"]
 
 
 
