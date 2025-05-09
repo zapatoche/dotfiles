@@ -1,9 +1,3 @@
--- WezTerm Keybindings Documentation by dragonlobster
--- ===================================================
--- Leader Key:
--- The leader key is set to ALT + q, with a timeout of 2000 milliseconds (2 seconds).
--- To execute any keybinding, press the leader key (ALT + q) first, then the corresponding key.
-
 -- Keybindings:
 -- 1. Tab Management:
 --    - LEADER + c: Create a new tab in the current pane's domain.
@@ -31,11 +25,6 @@
 -- 5. Status Line:
 --    - The status line indicates when the leader key is active, displaying an ocean wave emoji (🌊).
 
--- Miscellaneous Configurations:
--- - Tabs are shown even if there's only one tab.
--- - The tab bar is located at the bottom of the terminal window.
--- - Tab and split indices are zero-based.
-
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
 local utf8 = require("utf8")
@@ -49,7 +38,7 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
--- For example, changing the color scheme:
+-- theme
 config.color_scheme = "Catppuccin Macchiato"
 config.font = wezterm.font("MD IO Trial", {
 	weight = "Light",
@@ -71,7 +60,7 @@ config.tab_bar_at_bottom = true
 
 config.window_decorations = "RESIZE"
 
--- tmux
+-- tmux like
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 2000 }
 config.keys = {
 	{
@@ -197,5 +186,5 @@ wezterm.on("update-right-status", function(window, _)
 	}))
 end)
 
--- and finally, return the configuration to wezterm
+-- run
 return config
