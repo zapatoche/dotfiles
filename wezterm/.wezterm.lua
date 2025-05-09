@@ -43,7 +43,7 @@ config.color_scheme = "Catppuccin Macchiato"
 config.font = wezterm.font("MD IO Trial", {
 	weight = "Light",
 })
-config.font_size = 19
+config.font_size = 18
 config.line_height = 1.5
 
 config.window_padding = {
@@ -139,11 +139,11 @@ config.keys = {
 		action = wezterm.action.TogglePaneZoomState,
 	},
 	{
-		key = "e",
+		key = ",",
 		mods = "LEADER",
 		action = wezterm.action.PromptInputLine({
 			description = "Enter new name for tab",
-			action = wezterm.action_callback(function(window, pane, line)
+			action = wezterm.action_callback(function(window, line)
 				-- line will be `nil` if they hit escape without entering anything
 				-- An empty string if they just hit enter
 				-- Or the actual line of text they wrote
