@@ -1,3 +1,4 @@
 keybinding:
     universal:
-        confirmInEditor: <c-s>
+         confirmInEditor: <c-s>
+         confirmInEditor: <c-s>
