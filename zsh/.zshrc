@@ -62,3 +62,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 # Tell Antigen that you're done.
 antigen apply
+
+
+# Aliases
+alias gitui="gitui --watcher -t catppuccin-mocha.ron"
