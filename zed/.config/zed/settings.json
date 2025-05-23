@@ -7,6 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` appl  ication menu.
 {
+    "edit_predictions": {
+        "mode": "eager",
+        "copilot": {
+            "proxy": null,
+            "proxy_no_verify": null
+        },
+        "enabled_in_text_threads": false
+    },
     "icon_theme": "Catppuccin Mocha",
     "base_keymap": "JetBrains",
     "terminal": {
@@ -17,27 +25,28 @@
         "always_allow_tool_actions": true,
         "default_profile": "ask",
         "version": "2",
-        "provider": null,
+        // "provider": null,
         "default_model": {
             "provider": "zed.dev",
-            "model": "claude-3-7-sonnet-latest"
+            "model": "claude-sonnet-4-latest"
         },
-        "dock": "right",
-        "enable_experimental_live_diffs": true,
-        "font_family": "MD IO Trial",
-        "font_weight": 300
+        "dock": "right"
+        // "enable_experimental_live_diffs": true,
+        // "font_family": "MD IO Trial",
+        // "font_weight": 300
     },
     "features": {
         "edit_prediction_provider": "zed"
     },
     //
     "theme": "Catppuccin Mocha",
-    "ui_font_size": 17,
+    "ui_font_size": 18,
     "agent_font_size": 20,
-    "buffer_font_size": 17,
-    "buffer_font_weight": 300,
-    "buffer_font_family": "Operator Mono SSm",
-    // "buffer_font_family": "MD IO Trial",
+    "buffer_font_size": 18,
+    "buffer_font_weight": 100,
+    // "buffer_font_family": "Operator Mono SSm",
+    "buffer_font_family": "MD IO Trial",
+    // "agent_font_family": "MD IO Trial",
     "buffer_line_height": { "custom": 1.7 },
     "format_on_save": "on",
     "vim_mode": true,
@@ -56,6 +65,9 @@
         "selected_symbol": true,
         "diagnostics": "all"
     },
+    "minimap": {
+        // "show": "always"
+    },
     "vim": {
         "cursor_shape": {
             "normal": "block",
@@ -68,7 +80,7 @@
         "players": [
             {
                 "cursor": "#FAF1C3",
-                "selection": "#328e812b"
+                "selection": "#6FE7D026"
             }
         ]
     }
