@@ -43,7 +43,7 @@ config.color_scheme = "Catppuccin Macchiato"
 config.font = wezterm.font("MD IO Trial", {
 	weight = "Light",
 })
-config.font_size = 18
+config.font_size = 17
 config.line_height = 1.5
 
 config.window_padding = {
