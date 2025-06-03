@@ -23,12 +23,12 @@
     },
     "agent": {
         "always_allow_tool_actions": true,
-        "default_profile": "ask",
+        "default_profile": "write",
         "version": "2",
         // "provider": null,
         "default_model": {
             "provider": "zed.dev",
-            "model": "claude-sonnet-4-latest"
+            "model": "claude-sonnet-4"
         },
         "dock": "right"
         // "enable_experimental_live_diffs": true,
@@ -79,8 +79,8 @@
     "experimental.theme_overrides": {
         "players": [
             {
-                "cursor": "#FAF1C3",
-                "selection": "#6FE7D026"
+                "cursor": "#F9DAD5",
+                "selection": "#454759"
             }
         ]
     }
