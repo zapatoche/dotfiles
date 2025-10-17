@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` appl  ication menu.
 {
+    "prettier": {
+        "allowed": true
+    },
     "edit_predictions": {
         "mode": "eager",
         "copilot": {
@@ -24,15 +27,14 @@
     "agent": {
         "always_allow_tool_actions": true,
         "default_profile": "write",
-        "version": "2",
         // "provider": null,
         "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-sonnet-4"
+            "provider": "anthropic",
+            "model": "claude-sonnet-4-5-latest"
         },
         "dock": "right"
         // "enable_experimental_live_diffs": true,
-        // "font_family": "MD IO Trial",
+        // "font_family": "MD IO Trial"
         // "font_weight": 300
     },
     "features": {
@@ -40,14 +42,14 @@
     },
     //
     "theme": "Catppuccin Mocha",
-    "ui_font_size": 18,
-    "agent_font_size": 20,
-    "buffer_font_size": 18,
-    "buffer_font_weight": 100,
-    // "buffer_font_family": "Operator Mono SSm",
+    "ui_font_size": 16,
+    "agent_ui_font_size": 20,
+    "buffer_font_size": 18.0,
+    "buffer_font_weight": 300.0,
     "buffer_font_family": "MD IO Trial",
-    // "agent_font_family": "MD IO Trial",
-    "buffer_line_height": { "custom": 1.7 },
+    "buffer_line_height": {
+        "custom": 1.7
+    },
     "format_on_save": "on",
     "vim_mode": true,
     "cursor_blink": true,
@@ -66,7 +68,8 @@
         "diagnostics": "all"
     },
     "minimap": {
-        // "show": "always"
+        "show": "always"
+        // "display_in": "active_editor"
     },
     "vim": {
         "cursor_shape": {
