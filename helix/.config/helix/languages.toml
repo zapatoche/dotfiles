@@ -1,15 +1,47 @@
-[[language]]
-name = "css"
-indent = { tab-width = 4, unit = "    " }
-
+# JavaScript
 [[language]]
 name = "javascript"
-indent = { tab-width = 4, unit = "    " }
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+auto-format = true
 
+# TypeScript
 [[language]]
 name = "typescript"
-indent = { tab-width = 4, unit = "    " }
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
 
+# JSX
+[[language]]
+name = "jsx"
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+auto-format = true
+
+# TSX
+[[language]]
+name = "tsx"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+
+# CSS
+[[language]]
+name = "css"
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
+
+# SCSS
+[[language]]
+name = "scss"
+formatter = { command = "prettier", args = ["--parser", "scss"] }
+auto-format = true
+
+# HTML
 [[language]]
 name = "html"
-indent = { tab-width = 4, unit = "    " }
+formatter = { command = "prettier", args = ["--parser", "html"] }
+auto-format = true
+
+# JSON
+[[language]]
+name = "json"
+formatter = { command = "prettier", args = ["--parser", "json"] }
+auto-format = true

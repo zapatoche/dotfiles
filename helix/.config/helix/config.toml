@@ -7,7 +7,11 @@ end-of-line-diagnostics = "hint"
 rulers = [120]
 true-color = true
 mouse = false
+auto-format = true
 # bufferline = "multiple"
+
+[editor.lsp]
+display-messages = true
 
 [editor.inline-diagnostics]
 cursor-line = "warning" # show warnings and errors on the cursorline inline
