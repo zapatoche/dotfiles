@@ -36,3 +36,11 @@ plug "catppuccin/kakoune" theme config %{
   colorscheme catppuccin_(ThemeName)
 }
 
+plug "andreyorst/fzf.kak"
+plug "kakoune-lsp/kakoune-lsp"
+plug "Delapouite/kakoune-text-objects"
+plug "danr/kakoune-easymotion"
+plug "enricozb/tree-sitter.kak"
+plug "caksoylar/kakoune-smooth-scroll"
+plug "Delapouite/kakoune-mirror"
+plug "insipx/kak-crosshairs"
