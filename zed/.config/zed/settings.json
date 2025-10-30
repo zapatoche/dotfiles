@@ -7,57 +7,66 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` appl  ication menu.
 {
-    "prettier": {
-        "allowed": true
-    },
-    "edit_predictions": {
-        "mode": "eager",
-        "copilot": {
-            "proxy": null,
-            "proxy_no_verify": null
-        },
-        "enabled_in_text_threads": false
-    },
-    "icon_theme": "Catppuccin Mocha",
-    "base_keymap": "JetBrains",
-    "terminal": {
-        "dock": "right",
-        "font_size": 16
-    },
-    "agent": {
-        "always_allow_tool_actions": true,
-        "default_profile": "write",
-        // "provider": null,
-        "default_model": {
-            "provider": "anthropic",
-            "model": "claude-sonnet-4-5-latest"
-        },
-        "dock": "right"
-        // "enable_experimental_live_diffs": true,
-        // "font_family": "MD IO Trial"
-        // "font_weight": 300
-    },
-    "features": {
-        "edit_prediction_provider": "zed"
-    },
-    //
+    // Theme and UI
     "theme": "Catppuccin Mocha",
+    "icon_theme": "Catppuccin Mocha",
+    "theme_overrides": {
+        "Catppuccin Mocha": {
+            "vim.mode.text": "#333",
+            "vim.visual_line.background": "#cba6f7",
+            "vim.visual_block.background": "#eba0ac",
+            "vim.normal.background": "#74c7ec",
+            "vim.insert.background": "#94e2d5",
+            "vim.visual.background": "#f5c2e7",
+            "vim.replace.background": "#eba0ac"
+        }
+    },
+    "experimental.theme_overrides": {
+        "players": [
+            {
+                "cursor": "#F9DAD5",
+                "selection": "#454759"
+            }
+        ]
+    },
+
+    // Font and UI sizing
     "ui_font_size": 16,
     "agent_ui_font_size": 20,
-    "buffer_font_size": 18.0,
-    "buffer_font_weight": 300.0,
+    "buffer_font_size": 18,
+    "buffer_font_weight": 280,
     "buffer_font_family": "MD IO Trial",
     "buffer_line_height": {
         "custom": 1.7
     },
-    "format_on_save": "on",
+    "buffer_font_features": { "calt": true },
+
+    // Keymap and input
+    "base_keymap": "JetBrains",
     "vim_mode": true,
+    "vim": {
+        "cursor_shape": {
+            "normal": "block",
+            "insert": "bar",
+            "replace": "hollow",
+            "visual": "hollow"
+        }
+    },
     "cursor_blink": true,
+
+    // Editor behavior
+    "format_on_save": "on",
     "remove_trailing_whitespace_on_save": true,
-    "relative_line_numbers": true,
     "tab_size": 4,
+    "relative_line_numbers": true,
     "preview_tabs": {
         "enabled": true
+    },
+
+    // Editor UI elements
+    "indent_guides": {
+        "enabled": true,
+        "coloring": "indent_aware"
     },
     "scrollbar": {
         "show": "auto",
@@ -69,22 +78,46 @@
     },
     "minimap": {
         "show": "always"
-        // "display_in": "active_editor"
     },
-    "vim": {
-        "cursor_shape": {
-            "normal": "block",
-            "insert": "bar",
-            "replace": "hollow",
-            "visual": "hollow"
+    "editor": {
+        "rainbow_brackets": {
+            "enabled": true,
+            "gradient_start_hue": 0,
+            "gradient_step": 60,
+            "max_brackets": 100000
         }
     },
-    "experimental.theme_overrides": {
-        "players": [
-            {
-                "cursor": "#F9DAD5",
-                "selection": "#454759"
-            }
-        ]
+
+    // Terminal
+    "terminal": {
+        "dock": "right",
+        "font_size": 16
+    },
+
+    // AI and Agent
+    "agent": {
+        "always_allow_tool_actions": true,
+        "default_profile": "write",
+        "default_model": {
+            "provider": "zed.dev",
+            "model": "claude-haiku-4-5"
+        },
+        "dock": "right"
+    },
+    "edit_predictions": {
+        "mode": "eager",
+        "copilot": {
+            "proxy": null,
+            "proxy_no_verify": null
+        },
+        "enabled_in_text_threads": false
+    },
+    "features": {
+        "edit_prediction_provider": "zed"
+    },
+
+    // Tools
+    "prettier": {
+        "allowed": true
     }
 }
