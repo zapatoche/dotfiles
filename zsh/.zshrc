@@ -10,6 +10,7 @@ eval "$(zoxide init zsh)"
 alias fzs="fd --type f | fzf --preview 'bat --style=numbers --color=always {}' | xargs nvim"
 alias fzv="fd --type f --hidden --exclude .git | fzf-tmux --reverse --preview 'bat --style=numbers --color=always {}' | xargs nvim"
 
+bindkey -v
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -66,3 +67,4 @@ antigen apply
 
 # Aliases
 alias gitui="gitui --watcher -t catppuccin-mocha.ron"
+export PATH="$HOME/.local/bin:$PATH"
