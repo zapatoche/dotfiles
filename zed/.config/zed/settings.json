@@ -33,7 +33,7 @@
     // Font and UI sizing
     "ui_font_size": 16,
     "agent_ui_font_size": 20,
-    "buffer_font_size": 18,
+    "buffer_font_size": 17.0,
     "buffer_font_weight": 280,
     "buffer_font_family": "MD IO Trial",
     "buffer_line_height": {
